@@ -1,5 +1,8 @@
 function getUniqueNumbers(arr1: number[], arr2: number[]): number[] {
-  // Write your code below
+  let arr = [...arr1, ...arr2];
+ 
+    return arr.filter((item,
+        index) => arr.indexOf(item) === index);
 }
 
 const arr1 = [1, 2, 3, 4];
