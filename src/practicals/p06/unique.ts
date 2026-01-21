@@ -1,4 +1,4 @@
-function getUniqueNumbers(arr1: number[], arr2: number[]): number[] {
+export function getUniqueNumbers(arr1: number[], arr2: number[]): number[] {
   let arr = [...arr1, ...arr2];
  
     return arr.filter((item,
