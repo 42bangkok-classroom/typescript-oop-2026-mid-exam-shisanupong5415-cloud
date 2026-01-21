@@ -1,21 +1,21 @@
-const score = process.argv[2];
-let grade : string;
-if ((typeof score === 'number') && (score >= 0 && score <= 100)) {
-    switch(score) {
-        case score <= 49 :
-            grade = "F"
+let score = process.argv[2];
+let num = Number(score)
+if ((isNaN(num) == false) && (num >= 0 && num <= 100)) {
+    switch(true) {
+        case num <= 49 :
+            console.log("Grade is F")
             break
-        case score <= 59 :
-            grade = "D"
+        case num <= 59 :
+            console.log("Grade is D")
             break
-        case score <= 69 :
-            grade = "C"
+        case num <= 69 :
+            console.log("Grade is C")
             break
-        case score <= 79 :
-            grade = "B"
+        case num <= 79 :
+            console.log("Grade is B")
             break
-        case score <= 100 :
-            grade = "A"
+        case num <= 100 :
+            console.log("Grade is A")
             break
         default :
             console.log("Invalid input")
