@@ -1,2 +1,2 @@
-const text = (process.argv[2]);
+const text = ("Hello Exam");
 console.log(text);
